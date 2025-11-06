@@ -1,11 +1,7 @@
 // creamos y exportamos
 
-
-import { ROLES } from "./Ejercicio_4/usuariosConstantes";
-import {DESCUENTO} from "./constantes"
-
-
-
+import { ROLES } from "./usuariosConstantes.js";
+import {IVA, DESCUENTO} from "./constantes.js"
 
 export function calcularAreaCirculo(radio){
     return radio * radio * PI; //
@@ -38,7 +34,7 @@ export function calcularTotal(precio, cantidad){
     return precio * cantidad;
 }
 
-import { IVA, DESCUENTO } from './constantes.js';
+
 
 export function aplicarImpuestos(total) {
     return  total + (total * IVA);
